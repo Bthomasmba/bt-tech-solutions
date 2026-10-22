@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request a Project Update | BT Tech Solutions</title>
+<meta name="description" content="Current BT Tech Solutions clients: request a change, fix or status update for your website, CRM or other project.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#B4481F">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 40'%3E%3Ccircle cx='18' cy='20' r='14' fill='%23B4481F'/%3E%3Ccircle cx='30' cy='20' r='14' fill='%23D98A2B'/%3E%3Cpath d='M24 7.35 A14 14 0 0 1 24 32.65 A14 14 0 0 1 24 7.35 Z' fill='%237A3B22'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FBF4EA; --paper:#FFF8EE; --line:#EADBC6; --field:#D9C3A6;
+  --ink:#3A2418; --body:#5C4232; --clay:#B4481F; --clay-dark:#8A3414;
+  --serif:'Fraunces',Georgia,serif; --sans:'Work Sans',system-ui,sans-serif;
+  --pad:clamp(20px,6vw,96px);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.5}
+a{color:var(--clay)}a:hover{color:var(--clay-dark)}
+h1,h2{font-family:var(--serif);font-weight:600;margin:0;line-height:1.1}
+p{margin:0}
+.eyebrow{font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--clay)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:14px 26px;border-radius:999px;background:var(--clay);color:var(--paper);text-decoration:none;font-weight:600;font-size:17px;border:none;cursor:pointer;font-family:var(--sans)}
+.btn:hover{background:var(--clay-dark);color:var(--paper)}
+
+header{position:sticky;top:0;z-index:10;background:rgba(251,244,234,.95);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:0 var(--pad);height:76px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.mark{flex-shrink:0}
+.wordmark{display:flex;flex-direction:column;gap:4px;line-height:1}
+.wm-main{font-family:var(--serif);font-weight:600;font-size:22px;color:var(--ink)}
+.wm-sub{font-weight:600;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--clay)}
+.back{font-weight:600;color:var(--ink);text-decoration:none}
+.back:hover{color:var(--clay)}
+
+main{padding:clamp(48px,7vw,88px) var(--pad);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(40px,6vw,72px);align-items:start}
+.intro{display:flex;flex-direction:column;gap:20px;position:sticky;top:116px}
+.intro h1{font-size:clamp(36px,4.4vw,56px)}
+.intro > p{font-size:18px;line-height:1.65;color:var(--body)}
+.steps{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:16px}
+.steps li{display:flex;gap:14px;align-items:flex-start;font-size:16px;line-height:1.55;color:var(--body)}
+.num{flex-shrink:0;width:30px;height:30px;border-radius:50%;background:var(--clay);color:var(--paper);font-weight:600;font-size:14px;display:flex;align-items:center;justify-content:center}
+.steps strong{color:var(--ink)}
+.note{font-size:15px;color:var(--body);background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+
+form{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:clamp(24px,3.5vw,44px);display:flex;flex-direction:column;gap:22px}
+fieldset{border:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+legend{font-size:15px;font-weight:600;padding:0;margin-bottom:12px}
+.row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.field{display:flex;flex-direction:column;gap:8px}
+label{font-size:15px;font-weight:600}
+.opt{font-weight:400;color:var(--body)}
+input[type=text],input[type=email],input[type=url],input[type=date],select,textarea{font-family:var(--sans);font-size:16px;color:var(--ink);background:#fff;border:1px solid var(--field);border-radius:12px;padding:0 16px;height:50px;width:100%}
+textarea{height:auto;padding:14px 16px;resize:vertical;min-height:150px}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--clay);outline-offset:1px;border-color:var(--clay)}
+.choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.choice{position:relative}
+.choice input{position:absolute;opacity:0;width:100%;height:100%;margin:0;cursor:pointer}
+.choice span{display:flex;align-items:center;justify-content:center;min-height:52px;padding:10px 12px;text-align:center;border:1.5px solid var(--field);border-radius:12px;background:#fff;font-weight:600;font-size:15px}
+.choice input:checked + span{border-color:var(--clay);background:#FBE9DD;color:var(--clay-dark)}
+.choice input:focus-visible + span{outline:2px solid var(--clay);outline-offset:2px}
+.hidden{position:absolute;left:-9999px}
+form .btn{width:100%;min-height:52px}
+
+footer{background:var(--ink);color:var(--line);padding:28px var(--pad);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:15px}
+footer a{color:var(--line)}
+
+@media (max-width:900px){
+  main{grid-template-columns:1fr}
+  .intro{position:static}
+}
+@media (max-width:560px){
+  .row,.choices{grid-template-columns:1fr}
+  .wm-main{font-size:19px}
+  .mark{width:42px;height:35px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="/" aria-label="BT Tech Solutions home">
+    <svg class="mark" width="48" height="40" viewBox="0 0 48 40" aria-hidden="true"><circle cx="18" cy="20" r="14" fill="#B4481F"/><circle cx="30" cy="20" r="14" fill="#D98A2B"/><path d="M24 7.35 A14 14 0 0 1 24 32.65 A14 14 0 0 1 24 7.35 Z" fill="#7A3B22"/></svg>
+    <span class="wordmark"><span class="wm-main">BT Tech</span><span class="wm-sub">Solutions</span></span>
+  </a>
+  <a class="back" href="/">← Back to home</a>
+</header>
+
+<main>
+  <div class="intro">
+    <div class="eyebrow">Current clients</div>
+    <h1>Request a project update</h1>
+    <p>Need a change, a fix or a status check on your website, CRM or other project? Send the details here and it goes straight into my queue.</p>
+    <ol class="steps">
+      <li><span class="num">1</span><span><strong>Tell me what you need.</strong> The more specific, the faster I can act on it.</span></li>
+      <li><span class="num">2</span><span><strong>I confirm and estimate.</strong> I'll reply with timing, and a cost if it's outside your current scope.</span></li>
+      <li><span class="num">3</span><span><strong>I get it done</strong> and let you know when it's live.</span></li>
+    </ol>
+    <p class="note">Site down or something urgent? Choose <strong>Urgent</strong> below, and I'll prioritize it.</p>
+  </div>
+
+  <form name="update-request" method="POST" action="/request-received.html" data-netlify="true" netlify-honeypot="bot-field">
+    <p class="hidden"><label>Leave this empty: <input name="bot-field"></label></p>
+
+    <div class="row">
+      <div class="field"><label for="u-name">Name</label><input id="u-name" name="name" type="text" required autocomplete="name"></div>
+      <div class="field"><label for="u-email">Email</label><input id="u-email" name="email" type="email" required autocomplete="email"></div>
+    </div>
+    <div class="row">
+      <div class="field"><label for="u-org">Organization</label><input id="u-org" name="organization" type="text" required autocomplete="organization"></div>
+      <div class="field"><label for="u-project">Project name <span class="opt">(optional)</span></label><input id="u-project" name="project-name" type="text" placeholder="e.g. Website redesign"></div>
+    </div>
+
+    <fieldset>
+      <legend>Project type</legend>
+      <div class="choices">
+        <label class="choice"><input type="radio" name="project-type" value="Website" required><span>Website</span></label>
+        <label class="choice"><input type="radio" name="project-type" value="CRM project"><span>CRM project</span></label>
+        <label class="choice"><input type="radio" name="project-type" value="Other project"><span>Other project</span></label>
+      </div>
+    </fieldset>
+
+    <div class="row">
+      <div class="field"><label for="u-kind">What do you need?</label>
+        <select id="u-kind" name="request-kind" required>
+          <option value="">Choose one</option>
+          <option>Change or update content</option>
+          <option>Fix something that isn't working</option>
+          <option>Add a new feature</option>
+          <option>Status update on my project</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="field"><label for="u-priority">Priority</label>
+        <select id="u-priority" name="priority" required>
+          <option>Normal</option>
+          <option>Low — whenever you can</option>
+          <option>Urgent — something is broken</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field"><label for="u-url">Page or link <span class="opt">(optional)</span></label><input id="u-url" name="link" type="url" placeholder="https://"></div>
+      <div class="field"><label for="u-date">Needed by <span class="opt">(optional)</span></label><input id="u-date" name="needed-by" type="date"></div>
+    </div>
+
+    <div class="field"><label for="u-details">Details</label><textarea id="u-details" name="details" required placeholder="What should change, where, and what it should look like or do when it's done."></textarea></div>
+
+    <button class="btn" type="submit">Send request</button>
+  </form>
+</main>
+
+<footer>
+  <div>© 2026 BT Tech Solutions · Madison, WI</div>
+  <div><a href="/">Home</a></div>
+</footer>
+
+</body>
+</html>
